@@ -56,3 +56,11 @@ class CliApp
 ```
 
 Enjoy it!
+
+## Install
+Via Composer:
+```
+composer require sadovnik/ph
+```
+
+⚓️
