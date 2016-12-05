@@ -1,8 +1,5 @@
 # pretty heredoc
 
-Heredoc alternative for text.
-
-## Problem
 It's painful to write heredocs in the middle of some identation level:
 ```php
 class CliApp
