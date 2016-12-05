@@ -1,10 +1,9 @@
 # pretty heredoc
 
-It's painful to write heredocs in the middle of some identation level:
+It's painful to write heredocs in the middle of some indentation level:
 ```php
 class CliApp
 {
-    // ...
     public static function printUsage()
     {
         echo <<<EOL
@@ -17,7 +16,7 @@ EOL;
 }
 ```
 
-Ruby provides a way to make smart heredocs that respect identation:
+Ruby has smart heredocs that respect indentation:
 ```ruby
 class CliApp
   def self.print_usage
@@ -31,16 +30,15 @@ class CliApp
 end
 ```
 
-But PHP does not.
+But PHP has not.
 
-So I made a basic function that recieves string and strips it:
+So I made a basic function that receives string and strips it:
 ```php
 
 use function Sadovnik\PrettyHeredoc\ph as ✍️;
 
 class CliApp
 {
-    // ...
     public static function printUsage()
     {
         echo ✍️('
